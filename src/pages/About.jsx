@@ -32,19 +32,32 @@ const About = () => {
       </section>
 
       {/* Our Approach (3-step visual) */}
-            {/* Founder Section */}
-            <section className="py-16 bg-white border-y border-slate-100">
+                  {/* Leadership Section */}
+      <section className="py-16 bg-white border-y border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="w-16 h-1 bg-amber-500 mx-auto mb-8 rounded"></div>
-          <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-light italic mb-8">
+          <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-light italic mb-10">
             "At Verity One, our goal is to take the burden of financial and operational compliance off your shoulders, so you can focus entirely on scaling your business."
           </p>
-          <div>
-            <h3 className="text-2xl font-bold text-slate-900">Tushar Roy</h3>
-            <p className="text-amber-600 font-medium mt-1 uppercase tracking-wide text-sm">Founder & CEO, Verity One</p>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+            {/* Founder */}
+            <div>
+              <h3 className="text-2xl font-bold text-slate-900">Tushar Roy</h3>
+              <p className="text-amber-600 font-medium mt-1 uppercase tracking-wide text-sm">Co-Founder</p>
+            </div>
+            
+            {/* Divider Line (Desktop only) */}
+            <div className="hidden md:block w-px h-12 bg-slate-200"></div>
+            
+            {/* Co-Founder */}
+            <div>
+              <h3 className="text-2xl font-bold text-slate-900">Pradyuman Yadav</h3>
+              <p className="text-amber-600 font-medium mt-1 uppercase tracking-wide text-sm">Co-Founder</p>
+            </div>
           </div>
         </div>
       </section>
+
 
 
       {/* Why Businesses Choose Us */}

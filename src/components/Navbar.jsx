@@ -13,35 +13,38 @@ const Navbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="font-bold text-2xl text-slate-900 tracking-tight">VERITY <span className="text-amber-600">ONE</span></span>
+              <img src="/logo.png" alt="Verity One" className="h-14 md:h-16 w-auto object-contain" />
             </Link>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={`text-sm font-medium transition-colors ${isActive('/') ? 'text-amber-600' : 'text-slate-600 hover:text-slate-900'}`}
             >
               Home
             </Link>
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className={`text-sm font-medium transition-colors ${isActive('/about') ? 'text-amber-600' : 'text-slate-600 hover:text-slate-900'}`}
             >
               About Us
             </Link>
-            <a 
-              href="#contact" 
+            <a
+              href="https://wa.me/919599734594?text=Hi%20Verity%20One,%20I%20would%20like%20to%20discuss%20my%20business%20requirements."
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-2.5 bg-slate-900 text-white text-sm font-medium rounded-md hover:bg-slate-800 transition-colors shadow-sm"
             >
               Let's Talk
             </a>
+
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button 
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-600 hover:text-slate-900 focus:outline-none"
             >
@@ -61,22 +64,22 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white border-t border-slate-100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-amber-600 hover:bg-slate-50"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-amber-600 hover:bg-slate-50"
               onClick={() => setIsOpen(false)}
             >
               About Us
             </Link>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="block w-full text-center mt-4 px-6 py-3 bg-slate-900 text-white font-medium rounded-md"
               onClick={() => setIsOpen(false)}
             >

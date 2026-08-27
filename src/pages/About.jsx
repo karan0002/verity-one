@@ -32,57 +32,20 @@ const About = () => {
       </section>
 
       {/* Our Approach (3-step visual) */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Approach</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">A proven methodology focused on clarity and actionable results.</p>
-          </div>
-          
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-4 lg:space-x-12">
-            {/* Step 1 */}
-            <div className="flex flex-col items-center text-center max-w-xs">
-              <div className="w-20 h-20 bg-slate-900 text-amber-500 rounded-full flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
-                1
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Understand</h3>
-              <p className="text-slate-600">We analyze your unique business model, financial landscape, and specific operational challenges.</p>
-            </div>
-            
-            {/* Arrow */}
-            <div className="hidden md:block text-slate-300">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </div>
-
-            {/* Step 2 */}
-            <div className="flex flex-col items-center text-center max-w-xs">
-              <div className="w-20 h-20 bg-slate-900 text-amber-500 rounded-full flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
-                2
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Simplify</h3>
-              <p className="text-slate-600">We streamline complex regulations and workflows into manageable, efficient, and compliant processes.</p>
-            </div>
-
-            {/* Arrow */}
-            <div className="hidden md:block text-slate-300">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </div>
-
-            {/* Step 3 */}
-            <div className="flex flex-col items-center text-center max-w-xs">
-              <div className="w-20 h-20 bg-slate-900 text-amber-500 rounded-full flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
-                3
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Support</h3>
-              <p className="text-slate-600">We provide ongoing, reliable execution and strategic guidance to support your continuous growth.</p>
-            </div>
+            {/* Founder Section */}
+            <section className="py-16 bg-white border-y border-slate-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="w-16 h-1 bg-amber-500 mx-auto mb-8 rounded"></div>
+          <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-light italic mb-8">
+            "At Verity One, our goal is to take the burden of financial and operational compliance off your shoulders, so you can focus entirely on scaling your business."
+          </p>
+          <div>
+            <h3 className="text-2xl font-bold text-slate-900">Tushar Roy</h3>
+            <p className="text-amber-600 font-medium mt-1 uppercase tracking-wide text-sm">Founder & CEO, Verity One</p>
           </div>
         </div>
       </section>
+
 
       {/* Why Businesses Choose Us */}
       <section className="py-24 bg-white">
@@ -115,9 +78,15 @@ const About = () => {
       <section className="py-20 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8">Have a Business Requirement? Let's Talk.</h2>
-          <a href="mailto:contact@verityone.placeholder" className="inline-block px-10 py-4 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 transition-colors shadow-lg">
+          <a
+            href="https://wa.me/919599734594?text=Hi%20Verity%20One,%20I%20would%20like%20to%20discuss%20my%20business%20requirements."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-4 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 transition-colors shadow-lg"
+          >
             Let's Talk
           </a>
+
         </div>
       </section>
     </div>

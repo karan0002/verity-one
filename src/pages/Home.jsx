@@ -25,7 +25,7 @@ const Home = () => {
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500 via-transparent to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Your Business. Our Expertise. <br className="hidden md:block"/>
+            Your Business. Our Expertise. <br className="hidden md:block" />
             <span className="text-amber-500">One Complete Solution.</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
@@ -96,10 +96,16 @@ const Home = () => {
                 ))}
               </ul>
             </div>
-            <div className="lg:w-1/2 w-full h-80 lg:h-[400px] bg-slate-100 rounded-2xl flex items-center justify-center border border-slate-200">
-                {/* Abstract placeholder for professional imagery since real photos aren't provided */}
-                <div className="text-slate-400 font-medium">Professional Excellence</div>
+            {/* Pehle wala grey box hatakar ye daalein */}
+            <div className="lg:w-1/2 w-full h-80 lg:h-[400px] rounded-2xl overflow-hidden shadow-lg border border-slate-100 relative group">
+              <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+              <img
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Verity One Professional Team"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
             </div>
+
           </div>
         </div>
       </section>
@@ -109,9 +115,15 @@ const Home = () => {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Make Your Business Simpler.</h2>
           <p className="text-lg text-slate-300 mb-10">Let's discuss your business requirements and explore practical solutions.</p>
-          <a href="mailto:contact@verityone.placeholder" className="inline-block px-10 py-4 bg-amber-600 text-white font-medium rounded-md hover:bg-amber-700 transition-colors shadow-lg">
+          <a
+            href="https://wa.me/919599734594?text=Hi%20Verity%20One,%20I%20would%20like%20to%20discuss%20my%20business%20requirements."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3.5 bg-transparent border border-slate-400 text-white font-medium rounded-md hover:bg-slate-800 hover:border-slate-300 transition-colors"
+          >
             Let's Talk
           </a>
+
         </div>
       </section>
     </div>
